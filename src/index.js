@@ -1,6 +1,6 @@
 ({
-    "plugins": ["jsdom-quokka-plugin"],
-    "jsdom": { "file": "src/templates/doms/index.html" } // Located in project root
+  "plugins": ["jsdom-quokka-plugin"],
+  "jsdom": { "file": "src/templates/doms/index.html" } // Located in project root
 })
 
 const eldiv = document.getElementById('demo')
@@ -11,29 +11,29 @@ const eldiv = document.getElementById('demo')
 
 
 function startTiming() {
-    const today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    let eltimedisplay = document.getElementById('txt');
-    eltimedisplay.innerHTML = h + ":" + m + ":" + s;
-    setTimeout(startTiming, 1000);
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  let eltimedisplay = document.getElementById('txt');
+  eltimedisplay.innerHTML = h + ":" + m + ":" + s;
+  setTimeout(startTiming, 1000);
 }
 
 
 
 
 function checkTime(i) {
-    if (i < 10) { i = "0" + i };
-    return i;
+  if (i < 10) { i = "0" + i };
+  return i;
 }
 
 
 let users = [
-    { name : "Mwamuzi", age : 24, school : "Noroff"},
-    {name : "Julian", age : 22 , school : "Christania MBU"}
+  { name: "Mwamuzi", age: 24, school: "Noroff" },
+  { name: "Julian", age: 22, school: "Christania MBU" }
 ]
 
 console.table(users);
