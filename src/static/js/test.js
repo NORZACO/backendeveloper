@@ -20,6 +20,7 @@ function Clickme() {
     console.log("Button Clicked");
   });
 }
+Clickme()
 
 $(function ShowButton() {
   $("p").text("The DOM is now loaded and can be manipulated.");

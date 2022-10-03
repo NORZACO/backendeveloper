@@ -1,3 +1,12 @@
 .fa-universal-access {
     background-color: rgb(94, 200, 174);
 }
+
+
+.statementClass {
+    border: 1px solid green;
+}
+
+.targeting {
+    overflow: scroll; width: 200px; height: 100px;
+}

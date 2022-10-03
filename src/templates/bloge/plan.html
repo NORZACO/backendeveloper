@@ -3,7 +3,9 @@
 <html lang="en">
 
 <head>
+	<title> Welcome </title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 	</script>
@@ -25,12 +27,15 @@
 			width: 80%;
 			text-align: center;
 		}
+		section {
+			text-align: center;
+		}
 	</style>
 
 </head>
 
 <body>
-	<center>
+	<section>
 
 		<div class="foot">
 			<div class="row">
@@ -40,9 +45,10 @@
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="Add Task" id="text">
 						<div class="input-group-btn">
-							<button class="btn btn-success">
+							<button class="btn btn-success" type="button">x
 								<i class="glyphicon glyphicon-plus">
-								</i></button>
+								</i>
+							</button>
 						</div>
 					</div>
 					<br>
@@ -58,7 +64,7 @@
 		<div class="container">
 		</div>
 
-	</center>
+	</section>
 	<script>
 		$(document).ready(function () {
 			$('.btn-success').click(function () {
@@ -66,8 +72,10 @@
 					var x = $('.container').html();
 					var y =
 						`<div class="alert alert-success alert-dismissible fade in">
-	<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-						` + $('#text').val() + `</div>`;
+						 <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+						` + $('#text').val() + 
+						`</div>`;
+
 					$('.container').html(y + x);
 					$('#text').val("");
 				} else alert("Enter some Text!");

@@ -29,11 +29,11 @@ function Clickme() {
 }
 
 
-$(document).ready(function() {
-  $("h1").hover(function() {
-      $(this).css("color", "green");
-  }, function() {
-      $(this).css("color", "aliceblue");
+$(document).ready(function () {
+  $("h1").hover(function () {
+    $(this).css("color", "green");
+  }, function () {
+    $(this).css("color", "aliceblue");
   });
 });
 
@@ -52,7 +52,7 @@ let x2 = "hello".toUpperCase() // "HELLO"
 let x3 = "Hello".toLowerCase() // "hello"
 let x4 = "hello".replace(/e|o/g, "x") // "hxllx"
 let x5 = "1,2,3".split(",")
- // [ "1", "2", "3" ]//?
+// [ "1", "2", "3" ]//?
 var context = {
   x0: "Julian",
   // age: 22,
