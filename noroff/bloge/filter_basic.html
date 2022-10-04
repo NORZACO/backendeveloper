@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery-3.6.1.js" defer>  </script>
+
+    <script src="/noroff/static/js/filter_basic.js" defer></script>
+    <style>
+        section {
+            background: yellow;
+            border: 1px solid #AAA;
+            width: 80px;
+            height: 80px;
+            margin: 0 5px;
+            float: left;
+          }
+          section.colored {
+            background: green;
+          }
+    </style>
+</head>
+<body>
+
+    <ul class="nav">
+        <li>List 1, item 1</li>
+        <li>List 1, item 2</li>
+        <li>List 1, item 3</li>
+      </ul>
+      <ul class="nav">
+        <li>List 2, item 1</li>
+        <li>List 2, item 2</li>
+        <li>List 2, item 3</li>
+      </ul>
+
+
+    <div id="example">
+        <p id="para1" class="classA">The first paragraph.</p>
+        <p class="classA">The second paragraph.</p>
+        <p class="classB" id="para3">The third paragraph.</p>
+        <p class="classB" id="para4" lang="en-us">The fourth paragraph.</p>
+        <p class="classA" id="para5" lang="en-gb">The fifth paragraph.</p>
+    </div>
+
+
+<button id="run" type="submit">Run</button>
+
+<section></section>
+<section id="movers"></section>
+<section></section>
+<section></section>
+<hr><br><br>
+<br>
+<div>
+    <table border="1">
+        <tr><td>TD #0</td><td>TD #1</td><td>TD #2</td></tr>
+        <tr><td>TD #3</td><td>TD #4</td><td>TD #5</td></tr>
+        <tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr>
+      </table>
+</div>
+
+<div>
+    <a href="example.html" hreflang="en">Some text</a>
+<a href="example.html" hreflang="en-UK">Some other text</a>
+<a href="example.html" hreflang="english">will not be outlined</a>
+ 
+</div>
+</body>
+
+</html>

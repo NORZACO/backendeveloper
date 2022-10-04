@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery lesson</title>
+
+    <script src="/noroff/static/js/jQuery-advanced-filters.js" defer></script>
+    <script src="../../jquery-3.6.1.js">  </script>
+
+</head>
+
+<body>
+    <div>
+        <p>
+            In this section, we’ll focus on more advanced filters that focus on the content or position of the element,
+            specifically: <br><br>
+            :contains() filter – selects elements whose content contains certain text.<br><br>
+            :parent filter – selects elements that have at least one child node (can be an element or text).<br><br>
+            :has() – selects elements that contain at least one element that matches the specified selector.<br><br>
+            :first-child / :last-child – returns all elements that are the first/last child of their parent.<br><br>
+            :first-of-type / :last-of-type – returns all elements that are the first/last among all the siblings of the
+            same element name.<br><br>
+            nth-child() – select n-th child of their parent, we can use the n variable, for example, nth-child(2n) will
+            select all even children.<br><br>
+        </p>
+    </div>
+    <div id="example">
+        <p id="para1" class="classA">The first paragraph.</p>
+        <p class="classA">The second paragraph.</p>
+        <p class="classB" id="para3">The third paragraph.</p>
+        <p class="classB" id="para4" lang="en-us">The fourth paragraph.</p>
+        <p class="classA" id="para5" lang="en-gb">The fifth paragraph.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/noroff/static/js/filter_lesson.js" defer></script>
+    <script src="../../jquery-3.6.1.js">  </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <p>
+        :first - selects the first element meeting the condition.
+        :last - selects the last element meeting the condition.
+        :even- selects even elements meeting the condition.
+        :odd - selects odd elements meeting the condition.
+        :gt() - selects all elements of indices greater than the index within the matched set.
+        :not() - selects all elements not matching the given selector.
+        :eq() - selects the element at index n within the matched set.
+        You can see more filters in the official documentation in the READ section.
+    </p>
+
+    For now, let's look at an example using the following filters:
+    <div id="example">
+        <p id="para1" class="classA">Note an example on how to use :gt() :not() and :eq() filters. The font size is
+            changed only for paragraphs from three to five, as the second paragraph has index 1 – indices start from 0.
+            The: eq filter selects an element at a specified index from all found elements, so in our case, p:eq(2)
+            returns our third paragraph. By applying the :not() filter, we change the font of all our paragraphs beside
+            the second one to Comic Sans MS..</p>
+        <p class="classA">The second paragraph.</p>
+        <p class="classB" id="para3">The third paragraph.</p>
+        <p class="classB" id="para4" lang="en-us">The fourth paragraph.</p>
+        <p class="classA" id="para5" lang="en-gb">The fifth paragraph.</p>
+    </div>
+</body>
+
+</html>
