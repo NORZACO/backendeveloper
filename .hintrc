@@ -1,19 +1,19 @@
 {
-  "extends": ["development"],
-
+  "extends": [
+    "development"
+  ],
   "hints": {
     "axe/forms": "off",
     "axe/name-role-value": "off",
     "button-type": "off",
-
     "no-inline-styles": [
       "warning",
       {
         "requireNoStyleElement": true
       }
-    ]
+    ],
+    "meta-viewport": "off"
   },
-
   "connector": [],
   "formatters": []
 }
