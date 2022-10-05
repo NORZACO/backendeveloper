@@ -8,6 +8,7 @@ $("document").ready(function () {
     $("p[id^=para]").css("border", "5px solid red");
     $("p[id^=para][lang*=en-]").css("color", "blue");//?
     $("p[id^=para][lang*=en-]").css("border", "5px solid pink");
+    $("img[class^=product-item]")
   $("td:eq( 4 )").css( "color", "red" );
   $("table").css("color", "green");
 

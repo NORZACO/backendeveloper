@@ -2,9 +2,10 @@
 
 
 $("document").ready(function () {
-    $("#example").on("mousemove", onMouseOver);
-    $("#example").on("click", onMouseClick);
-    $("#example").on("mouseleave", onMouseLeave);
+    let elemListen = $("#example");
+    elemListen.on("mousemove", onMouseOver);
+    elemListen.on("click", onMouseClick);
+    elemListen.on("mouseleave", onMouseLeave);
 });
 
 function onMouseOver(eventype) {
