@@ -47,9 +47,12 @@ const country = [
 
 
 
+
+
 function chooseRandomCountry(country) {
    return country[Math.floor(Math.random()*country.length)];
 }
+
 
 let randomCountry = chooseRandomCountry(country);
 
@@ -57,12 +60,9 @@ console.log(randomCountry);
 
 
 let Student = ["Mwamuzi", "Shadrick", "Password1"]
-let mySet = new Set(
-   [
-   Student[0],Student[1], 
-   Student[2],randomCountry,
-   "Mwashadr",1999, "September"
-])
+let mySet = new Set([ Student[0],Student[1], Student[2],randomCountry, "Mwashadr",1999, "September"])
 
-console.log(mySet)
+console.table(mySet)
 
+
+module.exports = {Student, randomCountry, mySet, country}

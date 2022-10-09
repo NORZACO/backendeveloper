@@ -187,6 +187,7 @@ function gamechager() {
 }
 
 $("document").ready(function () {
+	/*
 	console.log('challenge.j Accepted')
 	let elemContainer = $("#products");
 	console.log(elemContainer.length);
@@ -209,19 +210,36 @@ $("document").ready(function () {
 	/*
 	let elemChildren1 = $(".product-name:nth-child(n4)");
 	elemChildren1.css("background-color", changeRandomColor2(colors));
-*/
+*///////
+
+
+	/*
 	console.log("ONE", changeRandomColor(colors))
 	console.log("TWO", changeRandomColor2(colors))
 
 	//let elemTest =   $("img[class^=product-item]");
 
 	const insertAround = () => {
-		//let elemTest =   $("img[class^=product-item]");
-		//let elemTest =   $(".product-item img[class]");
-		let elemTest = $(".product-item img[class]");
-		elemTest.fadeOut(1000)
+		let elemProduct = $(".product-item img[class]");
+		elemProduct.fadeOut(10)
 	};
-	insertAround()
+	//insertAround()
+
+
+	if ($(".product-item h2[data-type][data-type=\"mineralwater\"]")){
+		elemDataType_Mineralwater.css("background-color", "white");
+	}
+*/
+	let elemDataType_Protein = $(".product-item h2[data-type][data-type=\"proteinbar\"]");
+	elemDataType_Protein.css("background-color", colors[10]);
+
+	let elemDataType_Mineralwater = $(".product-item h2[data-type][data-type=\"mineralwater\"]");
+	elemDataType_Mineralwater.css("background-color", colors[12]);
+
+	let elemDataType_Vitamin = $(".product-item h2[data-type][data-type=\"vitamin\"]");
+	elemDataType_Vitamin.css("background-color", colors[13]);
+
+
 
 
 })
