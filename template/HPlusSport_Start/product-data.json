@@ -3,6 +3,17 @@
     "version" : "1.0",
     "products" : [
         {
+            "prod_name" : "Mwamuzi A",
+            "prod_id" : "V-0909",
+            "retail_price" : 40.99,
+            "description" : "Mwamuzi Shadrick",
+            "in_stock" : true,
+            "photo_src" : "images/products/vitamin-a.jpg"
+        },
+
+
+
+        {
             "prod_name" : "Vitamin A",
             "prod_id" : "V-A1037",
             "retail_price" : 4.99,
@@ -10,6 +21,9 @@
             "in_stock" : true,
             "photo_src" : "images/products/vitamin-a.jpg"
         },
+
+
+
         {
             "prod_name" : "Vitamin B-Complex",
             "prod_id" : "V-BC2178",

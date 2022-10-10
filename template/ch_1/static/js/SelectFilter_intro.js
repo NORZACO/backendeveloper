@@ -9,6 +9,6 @@ $("document").ready(function () {
                 $("p:first").css("border", "3px solid red");
                 $("p:first").css("background-color", "lightblue");
                 $("h2:not(.selectors)").css("border", "3px solid purple");
-                $("h2:not(.selectors").css("background-color", "purple");
+                $("h2:not(.selectors)").css("background-color", "purple");
 });
 
